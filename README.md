@@ -13,17 +13,20 @@
 
 ## Architecture
 
-![Model Architecture](./imgs/fw.pdf)
+<div align="center">
+  <img src="./imgs/fw.png" alt="Model Architecture" width="800"/>
+</div>
 
 E² introduces:
 - **Selection Tokens**: Identify fashion-relevant image regions
 - **Fusion Blocks**: Integrate regional information across network layers
-- **Separated Average Pooling**: Generate fused representations for different tag entities
 - **Region Contrastive Loss**: Align regional features with corresponding text attributes
 
 ## Performance Highlights
 
-![Retrieval Results](./imgs/retrieval_results.pdf)
+<div align="center">
+  <img src="./imgs/retrieval_results.png" alt="Retrieval Results" width="800"/>
+</div>
 
 ### Cross-Modal Retrieval
 - **Text-to-Image**: +9.1 improvement over CLIP-FT
@@ -36,7 +39,9 @@ When integrated into existing models:
 
 ## Domain Gap Analysis
 
-![Domain Gap](./imgs/f1.pdf)
+<div align="center">
+  <img src="./imgs/f1.png" alt="Domain Gap" width="800"/>
+</div>
 
 **The Challenge**: CLIP, trained on general domain data, often misses critical fashion details:
 - General domain: focuses on generic objects ("girl", "rock", "man", "bike", "hill")
@@ -46,24 +51,34 @@ When integrated into existing models:
 
 ## Dataset: AmazonFashion
 
-![AmazonFashion Dataset](./imgs/amazon1.pdf)
+<div align="center">
+  <img src="./imgs/amazon1.png" alt="AmazonFashion Dataset" width="600"/>
+</div>
 
 We collected a new fashion dataset from Amazon Reviews for comprehensive evaluation:
 
 ### Dataset Statistics
-![Dataset Statistics](./imgs/head.pdf)
+<div align="center">
+  <img src="./imgs/head.png" alt="Dataset Statistics" width="600"/>
+</div>
 
 ### Brand Distribution
-![Brand Distribution](./imgs/sorted_values.pdf)
+<div align="center">
+  <img src="./imgs/sorted_values.png" alt="Brand Distribution" width="700"/>
+</div>
 
-![Top 20 Brands](./imgs/top_20_names_distribution.pdf)
+<div align="center">
+  <img src="./imgs/top_20_names_distribution.png" alt="Top 20 Brands" width="400"/>
+</div>
 
 **Diversity**: The dataset covers a wide range of brands from high-fashion (Saint Laurent) to consumer brands (Amazon Collection, Invicta, The North Face).
 
 ## Qualitative Results
 
 ### Attention Visualization
-![Attention Results](./imgs/caption2.pdf)
+<div align="center">
+  <img src="./imgs/caption2.png" alt="Attention Results" width="800"/>
+</div>
 
 E² successfully identifies and attends to key fashion attributes:
 - **Brand**: Correctly identifies brand logos
@@ -72,9 +87,13 @@ E² successfully identifies and attends to key fashion attributes:
 - **Composition**: Identifies material composition (96% cotton, 4% polyurethane)
 
 ### Retrieval Examples
-![Retrieval Example 1](./imgs/a1.pdf)
+<div align="center">
+  <img src="./imgs/a1.png" alt="Retrieval Example 1" width="700"/>
+</div>
 
-![Retrieval Example 2](./imgs/a2.pdf)
+<div align="center">
+  <img src="./imgs/a2.png" alt="Retrieval Example 2" width="700"/>
+</div>
 
 E² demonstrates accurate retrieval by matching:
 - Composition details (cotton vs. wool vs. linen)
@@ -92,7 +111,3 @@ If you find this work useful, please cite:
   year={2024}
 }
 ```
-
-## Contact
-
-- **Daiqing Qi**: University of Virginia, Charlottesville, VA 22904 | daiqing.qi@virginia.edu
